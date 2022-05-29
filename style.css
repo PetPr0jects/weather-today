@@ -5,3 +5,9 @@ body{
     font-family: 'Jura', sans-serif;
     color: white;
 }
+#logo{
+    margin-top: 1%;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+}
