@@ -58,3 +58,8 @@ input{
     background-color: white;
     color: var(--main-color);
 }
+#result{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
