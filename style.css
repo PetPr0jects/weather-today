@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500&display=swap');
+:root{
+    --main-font:  'Jura', sans-serif;
+}
 body{
     background-color: #5A9CFF;
     margin: 0;
-    font-family: 'Jura', sans-serif;
+    font-family: var(--main-font);
     color: white;
 }
 #logo{
@@ -10,4 +13,31 @@ body{
     font-size: 3vw;
     display: flex;
     justify-content: center;
+}
+.userField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+}
+::placeholder{
+    color: white;
+}
+#userInput[type=text] {
+    outline: none;
+    margin-left: 3%;
+    border: none;
+    border-bottom: 0.2vw solid white;
+    background-color: rgba(0, 0, 0, 0);;
+}
+#inputButton{
+    margin-left: 3%;
+    text-align: center;
+    width: 5%;
+    color: black;
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+    font-family: var(--main-font);
+    font-size: 2vw;
 }
