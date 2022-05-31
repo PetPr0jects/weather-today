@@ -15,6 +15,8 @@ async function getWeather(){
     const responseFromWeather = await fetch(weatherRequest);
     const dataWeather = await responseFromWeather.json();
     document.getElementById("result").innerHTML = dataWeather.weather[0].main + " | " +Number((dataWeather.main.temp-273.15).toFixed(1)) + "°C";
+    document.getElementById("feelsLike").innerHTML ="Feels like - "+ Number((dataWeather.main.feels_like-273.15).toFixed(1)) + "°C";
+    document.getElementById("wind").innerHTML = "Wind: " + dataWeather.wind.speed + " M/S";
 }}
 async function getWeatherBtn(){
     let userInput = document.getElementById("userInput").value;
